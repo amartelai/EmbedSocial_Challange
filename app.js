@@ -1,6 +1,6 @@
 fetchData();
 function fetchData() {
-    fetch("data.json")
+    fetch("https://jsondata.vercel.app/data.json?fbclid=IwAR2FGKRHIfZE_HYzaVHKL91GFQa4Ukt01TPV6N4UOnDceo-OEtFxT6IZBjI")
         .then(response => {
             return response.json();
         })
