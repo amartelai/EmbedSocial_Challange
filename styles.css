@@ -26,6 +26,8 @@
     padding: 10px;
     /*height: 500px;*/
     border: 1px solid #ccc;
+
+
 }
 
 .profile-image{
@@ -79,4 +81,15 @@
     height: 30px;
     width: 30px;
     margin-top: -14px;
+}
+.footer-button{
+    text-align: center;
+}
+#btn{
+    background-color: dodgerblue;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 7px;
 }
