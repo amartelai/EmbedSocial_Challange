@@ -5,6 +5,8 @@
     display: grid;
     grid-gap: 10px;
     font-family: Helvetica, sans-serif;
+    margin-left: 37px;
+    margin-right: 37px;
 }
 .caption {
     /*height: 17%;
@@ -39,14 +41,13 @@
 
 }
 
-/***************/
+
 .post {
     padding: 10px;
-    /*height: 520px;
-    */border: 1px solid #ddd;
+    border: 1px solid #ddd;
 }
 .post .profile {
-    /*flex-direction: row;
+
     */margin-bottom: 10px;
     align-items: baseline;
 }
