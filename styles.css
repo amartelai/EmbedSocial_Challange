@@ -1,0 +1,69 @@
+@media (min-width: 768px) {
+    .posts { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 992px) {
+    .posts { grid-template-columns: repeat(4, 1fr); }
+}
+
+.posts{
+    margin: 0 auto;
+    /*display: grid;*/
+    grid-gap: 10px;
+    /*border: 1px solid #ccc;*/
+    display: grid;
+    /*height: 500px;*/
+    margin: 35px 50px;
+
+}
+.grid{
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+.post {
+    padding: 10px;
+    /*height: 500px;*/
+    border: 1px solid #ccc;
+}
+
+.profile-image{
+    /*display: inline-block;*/
+    /*height: 50px;*/
+    /*width: 50px;*/
+    /*background-color: red;*/
+    float: left;
+    margin-right: 15px;
+}
+img{
+    width: 50px;
+    height: 50px;
+    /*vertical-align: middle;*/
+    /*background-color: red;*/
+    border-radius: 23px
+}
+.username{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+.date { display: inline-block}
+
+
+.description{
+    margin-top: 20px;
+    font-family: "Systems Roboto";
+}
+.favorite{
+    /*display: inline-block;*/
+}
+.social-media{
+    height: 10px;
+    width: 10px;
+    float: right;
+}
+.load-more{
+    color: dodgerblue;
+    text-align: center;
+}
