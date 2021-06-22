@@ -28,7 +28,7 @@ function fetchData() {
                                 <div class="caption">${post.caption}</div>
                                 <hr>
                                 <div class="likes"><img src="icons/heart.svg"> 
-                                        <div style = "    margin-left: 20px; margin-top: -18px; margin-left: 23px;">
+                                        <div style = "    margin-left: 20px; margin-top: -18px; margin-left: 23px; font-size: 13px">
                                                 ${post.likes}
                                         </div>
                                 </div>
@@ -69,7 +69,7 @@ function showPost(post){
     post = `<div class="post">${image.outerHTML}${profile.outerHTML}<hr>${caption.outerHTML}${likes.outerHTML}</div>`;
     post = new DOMParser().parseFromString(post, "text/html").body.firstChild;
 
-    console.log(post);
+
     post.style.border = "none";
     post.style.padding = "0";
     let modal = document.getElementById("myModal");
