@@ -7,12 +7,17 @@ function fetchPosts(){
             console.log(data)
             const userData = data.map((item) =>{
                 let socialPhoto='';
-                if (item.source_type === "facebook"){
+                if (item.source_type === "facebook")
                      socialPhoto = "./icons/facebook.svg"
-                }
-                else {
+
+                else
                     socialPhoto ="./icons/instagram-logo.svg"
-                }
+
+                const date = new Date(item.date);
+                let formated_date = date.toLocaleDateString('en-GB', {
+                    day: 'numeric', month: 'short', year: 'numeric'
+                })
+
 
                 return `
                         <div class = "post">
@@ -23,16 +28,19 @@ function fetchPosts(){
                                  <div class = "username">
                                    ${item.name} 
                                  </div>
+                                 <div class = "soc_media">
+                                        <img class = "social-media" src="${socialPhoto}" /> 
+                                 </div>
                                 
                             </div>
                             
                             
                              <div class = "date">
-                                ${item.date}
+                                ${formated_date}
                              </div>
                              <div class = "photo"  >
                                  <img src = "${item.image}" style = "width: 100%;
-                                     height: 350px; object-fit: cover; margin-top: 15px; border-radius: 0px " /> 
+                                     height: 350px; object-fit: cover; margin-top: 15px; " /> 
                             </div> 
                             <div class = "description">
                                 ${item.caption}
